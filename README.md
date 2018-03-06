@@ -3,6 +3,10 @@ Node and Express Servers
 
 In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
+Here is the link to my Heroku deployment
+
+https://fathomless-stream-18142.herokuapp.com/
+
 ### Instructions
 
 1. Create a survey with 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
