@@ -5,11 +5,11 @@ In this activity, you'll build a compatibility-based "FriendFinder" application 
 
 ### Instructions
 
-1.Create a survey with 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
+1. Create a survey with 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
-2. These npm packages are requires: `express`, `body-parser` and `path`.
+2. This app requires these npm packages: `express`, `body-parser` and `path`.
 
-3. The `htmlRoutes.js` file should include these two routes:
+3. The `htmlRoutes.js` file should include two routes:
 
 * A GET Route to `/survey` which should display the survey page.
 * A default, catch-all route that leads to `home.html` which displays the home page.
