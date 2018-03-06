@@ -6,7 +6,11 @@ var friends = [{
 "scores": ["5", "1","4","4","5","1","2","5","4","1"]
 },
 {
+<<<<<<< HEAD
 "name": "Addad Maddad",
+=======
+"name": "Addad Scanlon",
+>>>>>>> 4a9284d0f55790042fa0c1e03bf4ed5f070e68f1
 "photo": "http://rodesigned.com/photos_ff/addad.jpg",
 "scores": [
 "4","2","5","1","3","2","2","1","3","2"]
