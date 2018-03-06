@@ -12,14 +12,14 @@ module.exports = function(app) {
 
     // Sets the post for the api/friends route
     app.post('/api/friends', function(req, res) {
-    		// Set variables only needed for the post
+        // Set variables only needed for the post
         var difference = 40;
         var matchName = '';
         var matchPhoto = '';
 
         // For each friend, loop to go through the data in friends.js to find a match
         friends.forEach(function(friend) {
-        		// Variables for comparing matches
+            // Variables for comparing matches
             var matchedScoresArray = [];
             var totalDifference = 40;
 
@@ -28,7 +28,7 @@ module.exports = function(app) {
                 return total + num;
             }
 
- // Create a loop that loops through each item of the scores arrays from both the stored data and the new user, and then substracts the absolutes, and then pushes the new value to the matchedScoresArray
+            // Create a loop that loops through each item of the scores arrays from both the stored data and the new user, and then substracts the absolutes, and then pushes the new value to the matchedScoresArray
             for (var i = 0; i < friend.scores.length; i++) {
                 matchedScoresArray.push(Math.abs(parseInt(req.body.scores[i]) - parseInt(friend.scores[i])));
 
@@ -39,7 +39,7 @@ module.exports = function(app) {
 
             // If the above value is smaller than the previous difference
             if (totalDifference < difference) {
-            		// Set it the previous difference
+                // Set it the previous difference
                 difference = totalDifference;
                 // Use the variables to set the appropriate friend match
                 matchName = friend.name;
